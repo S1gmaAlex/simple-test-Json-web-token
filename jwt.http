@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFsZXgiLCJpYXQiOjE2ODkxMzM2MzgsImV4cCI6MTY4OTEzMzY2OH0.yb76IsTy9IMh87_7Rclhcqt5rQ01oSuj2dus7IrYIvA
+
+###
+
+POST http://localhost:5500/login
+Content-Type: application/json
+
+{
+    "username":"Alex"
+}
+
+###
+POST http://localhost:5500/refeshToken
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFsZXgiLCJpYXQiOjE2ODkxMzM1OTF9.oUc5U_gubY7mrLp64j0l1TAZzgZMpNeAyhzTt0N4W7Y"
+}
+
+###
+POST http://localhost:5500/logout
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFsZXgiLCJpYXQiOjE2ODkxMzM1OTF9.oUc5U_gubY7mrLp64j0l1TAZzgZMpNeAyhzTt0N4W7Y"
+}
